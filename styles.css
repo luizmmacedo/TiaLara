@@ -1,0 +1,281 @@
+/* Configurações Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fundo branco para todo o corpo */
+    color: #333; /* Cor da escrita preta */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0078d4;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #004aad;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Menu de Navegação */
+.menu {
+    background-color: #003580;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    z-index: 999;
+    left: 0; /* Certifica que o menu comece no início da tela */
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu a:hover {
+    color: #00bfff;
+}
+
+/* Seções */
+main {
+    margin-top: 140px; /* Espaço para ajustar o conteúdo ao cabeçalho fixo */
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+}
+
+.inicio h1 {
+    text-align: center;
+    font-size: 2em; /* Tamanho da fonte aumentado para destacar mais */
+    margin: 20px auto;
+    color: #333; /* Cor da escrita preta */
+}
+
+.van-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recursos {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.recursos h1 {
+    font-size: 1.8em; /* Aumentar um pouco o título para maior destaque */
+    margin-bottom: 20px;
+    color: #333; /* Cor da escrita preta */
+}
+
+.recursos-list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Menus de Listagem */
+.menu-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+    text-align: center; /* Centralizar conteúdo */
+}
+
+.menu-section h1 {
+    font-size: 1.8em;
+    color: #333; /* Cor da escrita preta */
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-list .menu-item {
+    display: flex;
+    justify-content: center; /* Centralizar itens */
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.3em; /* Ajustar tamanho da fonte */
+}
+
+.menu-list .menu-item a {
+    color: #333; /* Cor da escrita preta */
+    text-decoration: none;
+    margin: 0 20px; /* Espaçamento entre links */
+}
+
+.centered-school {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333; /* Cor da escrita preta */
+    margin-bottom: 20px;
+}
+
+.centered-link {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Formulário */
+.form-section {
+    margin: 40px 0;
+    padding: 55px;
+    background-color: #ffffff;
+    position: relative; /* Adicionado para evitar sobreposição */
+}
+
+.form-section h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333; /* Cor da escrita preta */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center; /* Centraliza o botão */
+}
+
+button:hover {
+    background-color: #003580;
+}
+
+/* Ajustar para evitar sobreposição */
+button:active {
+    position: relative;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #003580;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer .contato-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.footer .whatsapp-link {
+    color: #25d366;
+    font-size: 1.2em;
+}
+
+.footer .telefone {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.footer .separator {
+    color: #fff;
+}
+
+/* Navegação Suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Corrigir a exibição do menu e garantir que ocupe toda a largura */
+.menu {
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Ajuste para centralizar a escola Maria Amim Ghanem */
+.menu-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-list li {
+    width: 200px;
+    text-align: center;
+}
+
+.menu-list .centered-school {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 20px;
+}
